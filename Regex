@@ -1,0 +1,10 @@
+TITLE
+
+{service.cached["⚡"||"⏳"]} {addon.name}{service.id::exists[" [{service.shortName}]"||""]}
+
+DESCRIPTION
+
+{?{stream.title::title}?}{? ({stream.year})?}{? {stream.seasonEpisode::join(' · ')}?}
+{stream.size::>0["{stream.size::sbytes}"||""]}{stream.duration::>0[" · {stream.duration::time}"||""]}{? · 👥 {stream.seeders}?}
+{?{stream.releaseGroup}?}{? · {stream.indexer}?}
+{?ℹ️ {stream.message}?}
