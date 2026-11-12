@@ -5,8 +5,8 @@ TITLE
 DESCRIPTION
 
 {?{stream.title::title}?}{? ({stream.year})?}{? {stream.seasonEpisode::join(' · ')}?}
-{stream.size::>0["{stream.size::sbytes}"||""]}{stream.duration::>0[" · {stream.duration::time}"||""]}{? · 👥 {stream.seeders}?}
-{?{stream.releaseGroup}?}{? · {stream.indexer}?}
+{stream.size::>0["{stream.size::sbytes}"||""]}{stream.duration::>0[" · {stream.duration::time}"||""]}
+{?{stream.releaseGroup}?}
 {?ℹ️ {stream.message}?}
 
 
